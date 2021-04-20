@@ -94,7 +94,7 @@ function ChatScreen({ chat, messages }) {
             <p>
               Last active:{" "}
               {recipient?.lastSeen?.toDate() ? (
-                <TimeAgo datetime={recipient?.timestamp?.toDate()} />
+                <TimeAgo datetime={recipient?.lastSeen?.toDate()} />
               ) : (
                 "loading..."
               )}
